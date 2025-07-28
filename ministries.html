@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries - BELIEVERS' CHAPEL OF POWER AKA (CHRIST OUR HOPE)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for general text, and a more prominent font for headings if desired -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333; /* Default text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif; /* A more elegant font for headings */
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #007bff; /* A vibrant blue for accents */
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+        /* Style for the floating WhatsApp button - copied for consistency */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+        }
+        .whatsapp-icon {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Consistent with other pages) -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="Church Logo" class="rounded-full">
+                <span class="text-xl md:text-2xl font-extrabold text-gray-800">BELIEVERS' CHAPEL OF POWER</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-4 lg:space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About Us</a>
+                <a href="ministries.html" class="text-blue-600 font-medium transition duration-300">Ministries</a>
+                <a href="sermons.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Sermons</a>
+                <a href="events.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Events</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 mt-2 rounded-lg shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Home</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">About Us</a>
+            <a href="ministries.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100 transition duration-300">Ministries</a>
+            <a href="sermons.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Sermons</a>
+            <a href="events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Events</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-4 md:px-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12 section-heading text-gray-800">
+                Our Ministries
+            </h1>
+
+            <!-- Children's Ministry Section -->
+            <section class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Children's Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Children's Ministry</h2>
+                        <p class="mb-4">
+                            Our Children's Ministry is dedicated to nurturing the spiritual growth of our youngest members in a fun, safe, and engaging environment. We believe in laying a strong biblical foundation from an early age, helping children understand God's love and His plan for their lives.
+                        </p>
+                        <p class="mb-4">
+                            Through age-appropriate lessons, creative activities, and loving guidance, we aim to instill Christian values, encourage fellowship, and inspire a lifelong relationship with Jesus Christ. Our dedicated team of volunteers is committed to providing a positive and impactful experience for every child.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Learn More for Kids
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Youth Ministry Section -->
+            <section class="mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Youth Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Youth Ministry</h2>
+                        <p class="mb-4">
+                            The Youth Ministry at BELIEVERS' CHAPEL OF POWER is a dynamic and vibrant community designed to empower teenagers to navigate life's challenges with faith and purpose. We provide a supportive space where young people can grow in their relationship with God, build meaningful friendships, and discover their unique gifts.
+                        </p>
+                        <p class="mb-4">
+                            Our programs include engaging Bible studies, interactive discussions, fun social events, and opportunities for service. We aim to equip our youth to be strong leaders, compassionate individuals, and impactful agents of change in their schools, homes, and communities.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Discover Youth Programs
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Worship Ministry Section -->
+            <section class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Worship Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Worship Ministry</h2>
+                        <p class="mb-4">
+                            Our Worship Ministry leads the congregation into the presence of God through heartfelt praise and worship. We believe that worship is a powerful expression of our love and devotion to God, and it creates an atmosphere for spiritual breakthrough and encounter.
+                        </p>
+                        <p class="mb-4">
+                            Comprising talented musicians, vocalists, and technical teams, this ministry strives for excellence in leading worship services that are Spirit-filled and inspiring. We invite you to join us as we lift our voices and hearts in adoration to our Creator.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Join the Worship Team
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Outreach Ministry Section -->
+            <section class="mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Outreach Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Outreach Ministry</h2>
+                        <p class="mb-4">
+                            The Outreach Ministry of BELIEVERS' CHAPEL OF POWER is the hands and feet of Christ in our community and beyond. We are passionate about demonstrating God's love through practical acts of service, compassion, and evangelism.
+                        </p>
+                        <p class="mb-4">
+                            From local community events to global mission trips, we actively seek opportunities to meet physical and spiritual needs, share the hope of the Gospel, and make a tangible difference in the lives of others. Join us as we extend God's love to the world.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Get Involved in Outreach
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Men's Ministry Section -->
+            <section class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Men's Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Men's Ministry</h2>
+                        <p class="mb-4">
+                            Our Men's Ministry is dedicated to building strong, godly men who are leaders in their homes, churches, and communities. We provide a supportive brotherhood where men can grow in their faith, share life experiences, and encourage one another to live out biblical principles.
+                        </p>
+                        <p class="mb-4">
+                            Through regular gatherings, Bible studies, and fellowship events, we aim to equip men to fulfill their God-given potential and to be positive role models for the next generation.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Join Men's Ministry
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Women's Ministry Section -->
+            <section class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row-reverse items-center md:space-x-reverse md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="images/history.jpg" alt="Women's Ministry" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-base md:text-lg">
+                        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Women's Ministry</h2>
+                        <p class="mb-4">
+                            The Women's Ministry at BELIEVERS' CHAPEL OF POWER is a vibrant sisterhood committed to empowering women to live purposeful, fulfilling, and Christ-centered lives. We create a nurturing environment where women can connect, grow in their faith, and support one another through all seasons of life.
+                        </p>
+                        <p class="mb-4">
+                            Our ministry offers Bible studies, fellowship events, workshops, and opportunities for mentorship. We aim to inspire women to embrace their unique calling, develop their spiritual gifts, and make a significant impact in their families, church, and wider community.
+                        </p>
+                        <a href="#" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                            Join Women's Fellowship
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Section (Consistent with other pages) -->
+    <footer class="bg-gray-800 text-white py-8 md:py-10 px-4 md:px-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">BELIEVERS' CHAPEL OF POWER</h3>
+                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                    A community dedicated to transforming lives and impacting the world for Christ. Join us in faith, fellowship, and service.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="about.html" class="text-gray-400 hover:text-blue-500 transition duration-300">About Us</a></li>
+                    <li><a href="ministries.html" class="text-blue-500 transition duration-300">Ministries</a></li>
+                    <li><a href="home.html#events" class="text-gray-400 hover:text-blue-500 transition duration-300">Events</a></li>
+                    <li><a href="sermons.html" class="text-gray-400 hover:text-blue-500 transition duration-300">Sermons</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Connect With Us</h3>
+                <ul class="space-y-2 text-gray-400 text-sm md:text-base">
+                    <li>68 Ilado Road, Akesan, Lasu Igando Road, Lagos, Nigeria</li>
+                    <li>Email: info@believerschapelofpower.org</li>
+                    <li>Phone: +44 7362741129</li>
+                </ul>
+                <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                    <!-- Social Media Icons (placeholders) -->
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.278 3.111a.75.75 0 01.442.923l-1.5 6a.75.75 0 01-1.428.006l-1.5-6a.75.75 0 01.923-.442l1.5 6a.75.75 0 011.428-.006l1.5-6a.75.75 0 01-.923-.442zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 011.06-1.06l2.25 2.25V7.5a.75.75 0 011.5 0v4.44l2.25-2.25a.75.75 0 011.06 1.06z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-xs md:text-sm">
+            &copy; 2025 BELIEVERS' CHAPEL OF POWER. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/447362741129" target="_blank" class="whatsapp-button">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.04 2C7.07 2 3.04 6.03 3.04 11C3.04 12.91 3.66 14.67 4.71 16.14L3.04 21.04L8.04 19.4C9.48 20.37 11.19 20.98 12.04 20.98C17.01 20.98 21.04 16.95 21.04 11.98C21.04 7.01 17.01 2 12.04 2ZM12.04 19.38C10.66 19.38 9.33 18.96 8.17 18.17L7.84 17.97L4.49 19.05L5.59 15.75L5.37 15.4C4.41 14.07 3.96 12.56 3.96 11C3.96 6.5 7.54 2.98 12.04 2.98C16.54 2.98 20.12 6.56 20.12 11.06C20.12 15.56 16.54 19.14 12.04 19.14V19.38ZM15.04 14.77C14.88 14.71 13.89 14.22 13.72 14.16C13.56 14.1 13.44 14.04 13.32 14.2C13.2 14.36 12.79 14.93 12.67 15.07C12.54 15.21 12.42 15.22 12.21 15.12C12.01 15.02 11.36 14.79 10.6 14.1C9.97 13.54 9.53 12.87 9.4 12.66C9.28 12.44 9.38 12.33 9.48 12.23C9.57 12.14 9.68 12 9.79 11.87C9.9 11.74 9.95 11.63 10.05 11.43C10.15 11.23 10.1 11.14 10.03 11.01C9.96 10.89 9.41 9.57 9.21 9.17C9.01 8.77 8.81 8.82 8.66 8.82C8.51 8.82 8.35 8.82 8.2 8.82C8.04 8.82 7.79 8.93 7.59 9.14C7.39 9.35 6.84 9.88 6.84 10.96C6.84 12.04 7.64 13.09 7.76 13.25C7.89 13.41 9.38 15.75 11.69 16.79C12.23 17.04 12.67 17.18 13.03 17.3C13.4 17.42 13.73 17.4 14.02 17.36C14.33 17.32 15.19 16.82 15.37 16.3C15.56 15.78 15.56 15.34 15.49 15.22C15.42 15.1 15.21 15.04 15.04 14.77Z"/>
+        </svg>
+        Chat on WhatsApp
+    </a>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

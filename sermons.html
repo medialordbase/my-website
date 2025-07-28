@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons - BELIEVERS' CHAPEL OF POWER</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for general text, and a more prominent font for headings if desired -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333; /* Default text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif; /* A more elegant font for headings */
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #007bff; /* A vibrant blue for accents */
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section (Copied from main site for consistent navigation) -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/logo.png" alt="Church Logo" class="rounded-full">
+                <span class="text-xl md:text-2xl font-extrabold text-gray-800">BELIEVERS' CHAPEL OF POWER</span>
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown on medium and up) -->
+            <div class="hidden md:flex space-x-4 lg:space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a>
+                <a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About Us</a>
+                <a href="ministries.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Ministries</a>
+                <a href="sermons.html" class="text-blue-600 font-medium transition duration-300">Sermons</a>
+                <a href="events.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Events</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default, toggled by JS) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 mt-2 rounded-lg shadow-lg">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Home</a>
+            <a href="index.html#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">About Us</a>
+            <a href="ministries.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Ministries</a>
+            <a href="sermons.html" class="block px-4 py-2 text-blue-600 hover:bg-gray-100 transition duration-300">Sermons</a>
+            <a href="events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Events</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-4 md:px-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12 section-heading text-gray-800">
+                Sermons & Media
+            </h1>
+
+            <!-- Video Sermons Section -->
+            <section class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 section-heading text-gray-800">Video Sermons</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Video Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-t-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">The Power of Faith</h3>
+                            <p class="text-gray-600 text-sm md:text-base mb-4">Prophet Israel Owoeye | July 21, 2025</p>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                                Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Video Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-t-lg" src="https://www.youtube.com/embed/another_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">Understanding Grace</h3>
+                            <p class="text-gray-600 text-sm md:text-base mb-4">Prophet Israel Owoeye | July 14, 2025</p>
+                            <a href="https://www.youtube.com/watch?v=another_video_id" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                                Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Video Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                        <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-t-lg" src="https://www.youtube.com/embed/yet_another_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">Living a Purposeful Life</h3>
+                            <p class="text-gray-600 text-sm md:text-base mb-4">Guest Speaker | July 7, 2025</p>
+                            <a href="https://www.youtube.com/watch?v=yet_another_video_id" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                                Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audio Sermons Section -->
+            <section>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 section-heading text-gray-800">Audio Sermons</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Audio Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">The Joy of Giving</h3>
+                        <p class="text-gray-600 text-sm md:text-base mb-4">Prophet Israel Owoeye | June 30, 2025</p>
+                        <audio controls class="w-full">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download class="inline-block mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                            Download Audio
+                        </a>
+                    </div>
+                    <!-- Audio Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">Overcoming Challenges</h3>
+                        <p class="text-gray-600 text-sm md:text-base mb-4">Prophet Israel Owoeye | June 23, 2025</p>
+                        <audio controls class="w-full">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" download class="inline-block mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                            Download Audio
+                        </a>
+                    </div>
+                    <!-- Audio Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl md:text-2xl font-semibold mb-2 text-gray-800">The Power of Prayer</h3>
+                        <p class="text-gray-600 text-sm md:text-base mb-4">Guest Speaker | June 16, 2025</p>
+                        <audio controls class="w-full">
+                            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" download class="inline-block mt-4 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm transition duration-300">
+                            Download Audio
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section (Copied from main site for consistency) -->
+    <footer class="bg-gray-800 text-white py-8 md:py-10 px-4 md:px-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- About -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">BELIEVERS' CHAPEL OF POWER</h3>
+                <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+                    A community dedicated to transforming lives and impacting the world for Christ. Join us in faith, fellowship, and service.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="about.html" class="text-gray-400 hover:text-blue-500 transition duration-300">About Us</a></li>
+                    <li><a href="ministries.html" class="text-gray-400 hover:text-blue-500 transition duration-300">Ministries</a></li>
+                    <li><a href="events.html" class="text-gray-400 hover:text-blue-500 transition duration-300">Events</a></li>
+                    <li><a href="sermons.html" class="text-blue-500 transition duration-300">Sermons</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold mb-4">Connect With Us</h3>
+                <ul class="space-y-2 text-gray-400 text-sm md:text-base">
+                    <li>68 Ilado Road, Akesan, Lasu Igando Road, Lagos, Nigeria</li>
+                    <li>Email: info@believerschapelofpower.org</li>
+                    <li>Phone: +44 7362741129</li>
+                </ul>
+                <div class="flex justify-center md:justify-start space-x-4 mt-6">
+                    <!-- Social Media Icons (placeholders) -->
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.278 3.111a.75.75 0 01.442.923l-1.5 6a.75.75 0 01-1.428.006l-1.5-6a.75.75 0 01.923-.442l1.5 6a.75.75 0 011.428-.006l1.5-6a.75.75 0 01-.923-.442zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z" clip-rule="evenodd"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 011.06-1.06l2.25 2.25V7.5a.75.75 0 011.5 0v4.44l2.25-2.25a.75.75 0 011.06 1.06z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-xs md:text-sm">
+            &copy; 2025 BELIEVERS' CHAPEL OF POWER. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
